@@ -3,8 +3,8 @@ export const loginData = (login, bio) => ({ type: SET_LOGIN_DATA, login, bio })
 
 const intialState = {
 
-    login: '',
-    bio: ''
+    login: 'Kate',
+    bio: 'I love React'
 
 
 }
