@@ -11,7 +11,7 @@ function App(props) {
         <LoginForm login={props.state.data.login} bio={props.state.data.bio} dispatch={props.dispatch}/>
         
       </div>
-     <Content login={props.state.data.login} bio={props.state.data.bio} dispatch={props.dispatch}/>
+     <Content login={props.state.data.login} bio={props.state.data.bio} subscribe={props.subscribe}/>
     </div>
   );
 }
