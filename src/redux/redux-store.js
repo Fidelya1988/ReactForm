@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux';
-import { reducer as formReducer } from 'react-final-form';
+import { combineReducers, createStore } from 'redux';
+import loginReducer from './loginReducer'
 const reducers = combineReducers(
     {
-        form: formReducer
+        data: loginReducer
     }
 )
 
@@ -11,3 +11,4 @@ const reducers = combineReducers(
 const store = createStore(reducers);
 
 window.store = store;
+export default store;
